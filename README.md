@@ -3,7 +3,7 @@ This APP provides a prediction website which uses Sklearn regression model to pr
 
 CLONE NOW AND GET STARTED!
 ### Watch the DEMO
-Demo gif animation is here  ![image](https://github.com/anqi666/PredictionAPP/blob/master/demoapp.gif )   
+Demo gif animation is here  ![image](https://raw.githubusercontent.com/anqi666/PredictionAPP/main/demoapp.gif )   
 ### Project Structure
 ---------------------------
 
