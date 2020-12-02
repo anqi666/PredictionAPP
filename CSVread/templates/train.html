@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Training</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Linear Regression Model
+		</div>
+<!--		<h2>The prediction result is for reference only.</h2>-->
+
+	</div>
+	</header>
+
+    <div class = "results1">
+	<style>
+    body {
+        text-align: center;
+    }
+    #go_to {
+        position: fixed;
+        right: 60px;
+        bottom: 10px;
+    }
+    </style>
+
+	<h2 name="top">Feature Importance Rank </h2>
+	<p>	From most important to the least:<br/>
+		<br/>
+		{% for table in Feature %}
+			{{ table }}<br/>
+		{% endfor %}
+		<br/></p>
+	<div class = "results2">
+	<p> {{formula_str}}</p>
+
+    </div>
+	<br>
+	<div class = "para1">
+	<p><img src="static/corr.jpg"><br>
+		The Feature Correlation Value graph shows that which factors are most influential to workloads.<br>
+		You might adjust the first three factors in order to adjust HRs' numbers. <br>
+		The negative value indicates that this feature causes reduction of workloads. <br>
+	</p>
+	</div>
+	<br>
+	<div class = "para1">
+	<p><img src="static/train_predict.jpg"><br>
+		The blue line indicates the prediction values in training sets.<br>
+		The red line indicates the real values in training sets.<br>
+	</p>
+	</div>
+
+	<div class = "para2">
+	<p>After TEN folds of Cross Validation,<br>
+	Mean Square Error = {{mean}}<br>
+	Standard Variance = {{std}}
+	</p>
+	</div>
+
+	<div class = "para1">
+	<p><img src="static/rmse.png" width="500" height="80"></p>
+	We choose Root Mean Square Error (RMSE)/MEAN (validation) % set to validate the result.<br>
+	Accuracy = {{acc}}%
+	</p>
+	</div>
+</body>
+</html>

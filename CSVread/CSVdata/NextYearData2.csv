@@ -1,0 +1,13 @@
+Month,Employee_Num,Enroll_Num,Dismiss_Num,PositionChange_Num,SalaryAdjust_Num,RecuitPlan_Num
+Jan-21,771,8,3,2,6,0
+Feb-21,776,3,0,7,7,5
+Mar-21,779,1,1,4,7,17
+Apr-21,779,5,2,9,2,18
+May-21,782,3,4,4,6,15
+Jun-21,781,2,5,8,6,12
+Jul-21,778,7,2,3,8,5
+Aug-21,783,4,1,2,2,5
+Sep-21,786,10,3,9,7,17
+Oct-21,793,3,3,5,3,8
+Nov-21,793,6,4,4,8,7
+Dec-21,795,8,0,3,4,8

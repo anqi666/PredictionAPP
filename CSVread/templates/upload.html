@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PredictionAPP</title>
+	 <link rel="stylesheet" type="text/css" href="../static/style.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='../style.css') }}">
+</head>
+<body>
+	<header>
+
+
+    <div class="container">
+		<div id="brandname">
+            <b>Workload Prediction App</b>
+
+		</div>
+        <h2>-----------Predict HR's Workloads Next Year--------------</h2>
+	</div>
+	</header>
+
+    <div class="container2">
+    <style>
+    body {
+        text-align: center;
+    }
+    #go_to {
+        position: fixed;
+        right: 60px;
+        bottom: 10px;
+    }
+    </style>
+
+    <h3 name="top">User Instructions</h3>
+    <p>This application is used for predicting workloads of HRs.<br/>
+    If you want to know how many HRs you might need in your company next year, please follow the instructions below<br/>
+    1. Upload previous data form in csv format.<br/>
+    2. Upload next year's data form in csv format.<br/>
+    3. Click "Start Training" to build prediction model.<br/>
+    4. Click "Predict" to check next year's workloads.<br/>
+    </p>
+
+    </div>
+
+    <div class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    {% if category in ["success","danger"] %}
+                        <div class="alert alert-{{ category }}">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            {{ message }}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+<!--        <form method="post" enctype="multipart/form-data">-->
+<!--            <input type="file"  name="fileupload1" >-->
+<!--            <input type="submit" value="Upload history data">-->
+
+<!--&lt;!&ndash;        <input type="submit" class="btn-info" value="predict">&ndash;&gt;-->
+<!--        </form>-->
+
+        <form name = "form1" method="post" enctype="multipart/form-data">
+            <input type="file" name="fileupload1"  id="fileupload1" style="display:none;" onChange="document.form1.path.value=this.value">
+            <input name="path" readonly>
+            <input type="button" class="btn3-info" value="SELECT HISTORY DATA" onclick="document.form1.fileupload1.click()">
+            <input type="submit" value="PREVIEW">
+        </form>
+
+    </div>
+
+    <div class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    {% if category in ["success","danger"] %}
+                        <div class="alert alert-{{ category }}">
+                            <button type="button"  class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            {{ message }}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+<!--        <form method="post" enctype="multipart/form-data">-->
+<!--            <input type="file"  name="fileupload">-->
+<!--            <input type="submit" value="Data used for prediction">-->
+
+<!--&lt;!&ndash;        <input type="submit" class="btn-info" value="predict">&ndash;&gt;-->
+<!--        </form>-->
+
+        <form name = "form2" method="post" enctype="multipart/form-data">
+            <input type="file" name="fileupload"  id="fileupload2" style="display:none;" onChange="document.form2.path.value=this.value">
+            <input name="path" readonly>
+            <input type="button" class="btn4-info" value="SELECT PREDICTION DATA" onclick="document.form2.fileupload.click()">
+            <input type="submit" value="PREVIEW">
+        </form>
+
+    </div>
+    <br/>
+    <div class="ml-container">
+        <form action="{{ url_for('train')}}" method="POST">
+<!--		<p>Enter Your Message Here</p>-->
+<!--		&lt;!&ndash; <input type="text" name="comment"/> &ndash;&gt;-->
+<!--		<textarea name="message" rows="4" cols="50"></textarea>-->
+		    <br/>
+		    <input type="submit" class="btn1-info" value="Start Training">
+
+	    </form>
+	</div>
+    <div class="ml-container">
+        <form action="{{ url_for('predict')}}" method="POST">
+<!--		<p>Enter Your Message Here</p>-->
+<!--		&lt;!&ndash; <input type="text" name="comment"/> &ndash;&gt;-->
+<!--		<textarea name="message" rows="4" cols="50"></textarea>-->
+		    <br/>
+		    <input type="submit" class="btn2-info" value="Predict">
+
+	    </form>
+	</div>
+
+</body>
+</html>

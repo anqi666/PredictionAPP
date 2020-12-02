@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Workload Prediction of Next Year
+		</div>
+<!--		<h2>The prediction result is for reference only.</h2>-->
+
+	</div>
+	</header>
+<!--	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Comment</b></p>-->
+	<div class = "results">
+    <style>
+    body {
+        text-align: center;
+    }
+    #go_to {
+        position: fixed;
+        right: 60px;
+        bottom: 10px;
+    }
+    </style>
+
+	<p>{% for t,v in prediction.items() %}
+      			{{t,v}}<br/>
+		{% endfor %}</p>
+	</div>
+
+	<div class = "para2">
+	<p>WARNING<br>
+	The prediction results are only used for reference.<br>
+	</p>
+	</div>
+
+</body>
+</html>
+

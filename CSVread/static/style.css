@@ -1,0 +1,133 @@
+body{
+	font:15px/1.5 Arial, Helvetica,sans-serif;
+	padding: 0px;
+	background-color:#f4f3f3;
+}
+ 
+.container{
+	width:100%;
+	margin: auto;
+	overflow: hidden;
+	font-size:15px;
+}
+
+.container2{
+	width:100%;
+	margin: auto;
+	overflow: hidden;
+	font-size:20px;
+}
+
+ 
+header{
+	background:#339900;#35434a;
+	border-bottom:#448AFF 3px solid;
+	height:120px;
+	width:100%;
+	padding-top:30px;
+ 
+}
+ 
+.main-header{
+			text-align:center;
+			background-color: blue;
+			height:100px;
+			width:100%;
+			margin:0px;
+		}
+#brandname{
+	float:left;
+	font-size:30px;
+	color: #fff;
+	margin: 10px;
+	font-weight:bold;
+}
+ 
+header h2{
+	text-align:center;
+	color:#fff;
+ 
+}
+ 
+ 
+ 
+.btn1-info {background-color: #000000;
+	height:50px;
+	width:200px;
+	font-size:20px;
+    font-weight:bold;
+	font-style:normal;
+	color:white} /* Blue */
+.btn-info:hover {background: #35434a;}
+
+.btn2-info {background-color: #339900;
+	height:50px;
+	width:200px;
+	font-size:20px;
+    font-weight:bold;
+	font-style:normal;
+	color:white} /* Blue */
+.btn-info:hover {background: #35434a;}
+
+
+.btn3-info {background-color: #000000;
+	height:25px;
+	width:250px;
+	font-size:10px;
+    font-weight:bold;
+	font-style:normal;
+	color:white} /* Blue */
+.btn-info:hover {background: #35434a;}
+
+.btn4-info {background-color: #339900;
+	height:25px;
+	width:250px;
+	font-size:10px;
+    font-weight:bold;
+	font-style:normal;
+	color:white} /* Blue */
+.btn-info:hover {background: #35434a;}
+
+ 
+.results{
+	width:100%;
+	margin: auto;
+	overflow: hidden;
+    font-size:30px;
+    font-weight: bold;
+
+}
+.results1{
+	width:100%;
+	margin: auto;
+	overflow: hidden;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.results2{
+	width:100%;
+	margin: auto;
+	overflow: hidden;
+    font-size: 13px;
+    font-weight: bold;
+    color: red;
+
+}
+
+.para1{
+	width:100%;
+	margin: auto;
+	overflow: hidden;
+    font-size: 15px;
+    font-weight: bold;
+}
+.para2{
+	width:100%;
+	margin: auto;
+	overflow: hidden;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
