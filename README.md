@@ -1,6 +1,7 @@
 This APP provides a prediction website which uses Sklearn regression model to predict HR's workloads next year. Most of the time developers use Sklearn simply to build a model or classifier. They barely build a website to provide APIs for users. With powerful Werkzeug WSGI tool box and Jinja2 templates, Flask is imported in this project to enable more users to implement the model.
 
 CLONE NOW AND GET STARTED!
+### Watch the DEMO
 ![image](https://github.com/anqi666/PredictionAPP/blob/master/demoapp.gif )   
 ### Project Structure
 ---------------------------
