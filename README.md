@@ -1,4 +1,5 @@
 # Prediction APP of Workloads 
+If you want to predict how many employers you might need next year, just input previous data and influencial elements into this app, it will come out the workoads next year!
 This APP provides a prediction website which uses Sklearn regression model to predict HR's workloads next year. Most of the time developers use Sklearn simply to build a model or classifier. They barely build a website to provide APIs for users. With powerful Werkzeug WSGI tool box and Jinja2 templates, Flask is imported in this project to enable more users to implement the model.
 
 CLONE NOW AND GET STARTED!
