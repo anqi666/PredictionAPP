@@ -33,9 +33,8 @@ CLONE NOW AND GET STARTED!
 - matplotlib
 
 If you don't have Flask, 
- .. code-block:: bash
 
-      $ pip install xUnique
+      $ pip install flask
 ### Running API
 ---------------------------
 ```
