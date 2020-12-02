@@ -3,6 +3,7 @@ This APP provides a prediction website which uses Sklearn regression model to pr
 CLONE NOW AND GET STARTED!
 
 ### Project Structure
+---------------------------
 
 - CSVdata 
     - NextYearData1.csv
@@ -24,11 +25,18 @@ CLONE NOW AND GET STARTED!
     - train.html
     - upload.html    
 ### Dependencies
+---------------------------
 - scikit-learn
 - Flask
 - pandas
 - numpy
 - matplotlib
+
+If you don't have Flask, 
+ .. code-block:: bash
+
+      $ pip install xUnique
 ### Running API
+---------------------------
 ```
 python app.py 
